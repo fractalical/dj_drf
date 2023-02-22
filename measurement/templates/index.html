@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<li>
+    <a href="/api/sensors/">Информация о датчиках/Добавить датчик</a>
+</li>
+<li>
+    <a href="/api/sensor_info/input" id="link">Подробная информация о датчике</a>
+    <input type="number" id="quantity" value="1">
+    <script>
+    link.onclick = function(e) {
+      this.setAttribute('href',this.getAttribute('href').replace("input",quantity.value));
+    }
+    </script>
+</li>
+<li>
+    <a href="/api/sensor_edit/input" id="link1">Редактировать датчик</a>
+    <input type="number" id="quantity1" value="1">
+    <script>
+    link1.onclick = function(e) {
+      this.setAttribute('href',this.getAttribute('href').replace("input",quantity1.value));
+    }
+    </script>
+</li>
+<li>
+    <a href="/api/measure_add/">Добавить измерение</a>
+</li>
+</body>
+</html>
